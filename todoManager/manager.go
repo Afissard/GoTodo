@@ -8,7 +8,7 @@ type task struct {
 }
 
 type TaskList struct {
-	TaskList []task
+	Tasks []task
 }
 
 const ( // Status
