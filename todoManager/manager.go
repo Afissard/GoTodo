@@ -7,7 +7,7 @@ type task struct {
 	Status      int
 }
 
-type TodoList struct {
+type TaskList struct {
 	TaskList []task
 }
 

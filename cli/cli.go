@@ -1,8 +1,2 @@
-package cli
+package TodoCLI
 
-type AppFlags struct {
-	ShowList *bool
-	Add      *bool
-	Remove   *bool
-	Sort     *bool
-}
