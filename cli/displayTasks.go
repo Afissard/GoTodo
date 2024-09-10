@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func DisplayTasks(taskList todomanager.TaskList) {
+func displayTasks(taskList todomanager.TaskList) {
 	output := "Priority\tStatus\tDescription\n"
 	for i := 0; i < len(taskList.Tasks); i++ {
 		currentTask := taskList.Tasks[i]

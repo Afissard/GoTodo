@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func GetMenuChoice(menuOptions []string, timeFailed int) (choice int) {
+func getMenuChoice(menuOptions []string, timeFailed int) (choice int) {
 	for i := 0; i < len(menuOptions); i++ {
 		fmt.Printf("%d. %s", i+1, menuOptions[i])
 	}
