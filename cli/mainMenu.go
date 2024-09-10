@@ -3,14 +3,16 @@ package cli
 import (
 	todomanager "TodoCLI/todoManager"
 	"fmt"
+	"os"
 )
 
 func MainMenu(taskList todomanager.TaskList){
-	switch GetMenuChoice(mainMenuOptions, 0) {
-	case showTasks:
+	switch getMenuChoice(mainMenuOptions, 0) {
+	case mainMenuOptions[0].id:
 		displayTasks(taskList)
-	case quit:
+	case mainMenuOptions[3].id:
 		fmt.Println("Exit")
-		Exit(0)
+		os.Exit(0)
+	default: fmt.Println("WIP or error")
 	}
 }

@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"TodoCLI/cli"
+	todomanager "TodoCLI/todoManager"
+)
 
 func main() {
-	fmt.Println("TodoCLI")
+	todoList := todomanager.TaskList{}
+
+	cli.MainMenu(todoList)
 }
